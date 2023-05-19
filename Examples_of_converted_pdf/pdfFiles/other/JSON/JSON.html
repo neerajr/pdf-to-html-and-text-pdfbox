@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html><head><title> Introduction toJSON (JavaScriptObject Notation)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<div style="page-break-before:always; page-break-after:always"><div><p> Introduction toJSON (JavaScriptObject Notation)
+Sang Shin
+Java Technology Architect
+Sun Microsystems, Inc.
+sang.shin@sun.com
+www.javapassion.com</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>2<p>Disclaimer &amp; Acknowledgments
+&#9679; Even though Sang Shin is a full-time employee of Sun Microsystems, the contents here are created as his own personal endeavor and thus does not reflect any official stance of Sun Microsystems</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>3<p>Topics
+&#8226; What is JSON?
+&#8226; JSON Data Structure
+</p>
+<p>&gt; JSON Object
+&gt; JSON text 
+</p>
+<p>&#8226; JSON and Java Technology
+&#8226; How to send and receive JSON data at both client and server sides
+&#8226; JSON-RPC
+&#8226; Resources</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p> 
+What is &amp; Why JSON?</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>5<p>What is JSON?
+&#8226; Lightweight data-interchange format
+</p>
+<p>&gt; Compared to XML
+&#8226; Simple format
+</p>
+<p>&gt; Easy for humans to read and write
+&gt; Easy for machines to parse and generate
+</p>
+<p>&#8226; JSON is a text format
+&gt; Programming language independent
+&gt; Uses conventions that are familiar to programmers of the C-family of languages, including C, C++, C#, Java, JavaScript, Perl, Python</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>6<p>Why Use JSON over XML
+&#8226; Lighter and faster than XML as on-the-wire data format
+&#8226; JSON objects are typed while XML data is typeless
+</p>
+<p>&gt; JSON types: string, number, array, boolean,
+&gt; XML data are all string
+</p>
+<p>&#8226; Native data form for JavaScript code
+&gt; Data is readily accessible as JSON objects in your JavaScript code vs. XML data needed to be parsed and assigned to variables through tedious DOM APIs
+&gt; Retrieving values is as easy as reading from an object property in your JavaScript code</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>7<p>Where is JSON Used?
+&#8226; Represent configuration information
+&#8226; Implement communication protocols</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p> 
+JSON Object </p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>9<p>JSON Structures   
+&#8226; A collection of name/value pairs
+</p>
+<p>&gt; In various languages, this is realized as an object, record, struct, dictionary, hash table, keyed list, or associative array
+&#8226; An ordered list of values
+</p>
+<p>&gt; In most languages, this is realized as an array, vector, list, or sequence 
+&#8226; These are universal data structures supported by most modern programming languages</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>10
+</p>
+<p>JSON Object Notation  
+&#8226; A JSON object is an unordered set of name/value pairs
+&#8226; A JSON object begins with { (left brace) and ends with } (right brace)
+&#8226; Each name is followed by : (colon) and the name/value pairs are separated by , (comma)</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>11
+</p>
+<p>JSON and JavaScript 
+&#8226; JSON is a subset of the object literal notation of JavaScript
+</p>
+<p>&gt;  JSON can be used in the JavaScript language with no muss or fuss</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>12
+</p>
+<p>Example: JSON Object
+var myJSONObject = {&quot;bindings&quot;: [
+</p>
+<p>        {&quot;ircEvent&quot;: &quot;PRIVMSG&quot;, &quot;method&quot;: &quot;newURI&quot;, &quot;regex&quot;: &quot;^http://.*&quot;},
+        {&quot;ircEvent&quot;: &quot;PRIVMSG&quot;, &quot;method&quot;: &quot;deleteURI&quot;, &quot;regex&quot;: &quot;^delete.*&quot;},
+        {&quot;ircEvent&quot;: &quot;PRIVMSG&quot;, &quot;method&quot;: &quot;randomURI&quot;, &quot;regex&quot;: &quot;^random.*&quot;}
+    ]
+};
+</p>
+<p>&#8226; In this example, a JSON JavaScript object is created containing a single member &quot;bindings&quot;, which contains an array containing three objects, each containing &quot;ircEvent&quot;, &quot;method&quot;, and &quot;regex&quot; members
+&#8226; Members can be retrieved using dot or subscript operators
+</p>
+<p>myJSONObject.bindings[0].method    // &quot;newURI&quot;</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>13
+</p>
+<p>Text to Object Conversion in JavaScript code
+var myObject = eval('(' + myJSONtext + ')');
+</p>
+<p>&#8226; To convert a JSON text into an JSON object, use the eval() function
+&gt; eval() invokes the JavaScript compiler
+&gt; Since JSON is a proper subset of JavaScript, the compiler will correctly parse the text and produce an object structure</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>14
+</p>
+<p>Security &amp; JSON Parser
+// Include http://www.json.org/json.js
+var myObject = myJSONtext.parseJSON();
+</p>
+<p>&#8226; eval() can compile and execute any JavaScript program, so there can be security issues (cross-site scripting)
+&gt; Use eval() when the source can be trusted
+</p>
+<p>&#8226; When security is a concern - the source cannot be trusted -, it is better to use a JSON parser
+&gt; A JSON parser will only recognize JSON text and so is much safer</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>15
+</p>
+<p>Object to Text Conversion
+var myJSONText = myObject.toJSONString();
+</p>
+<p>&#8226; You can convert JSON object into JSON text
+&#8226; JSON does not support cyclic data structure
+</p>
+<p>&gt; Do not give cyclical structures to the JSON stringifier</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p> 
+JSON in Java</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>17
+</p>
+<p>JSON Tools for Java Developer 
+&#8226; Parser
+</p>
+<p>&gt; Parse JSON text files and convert these to a Java model
+&#8226; Renderer
+</p>
+<p>&gt; Render a Java representation into text
+&#8226; Serializer
+</p>
+<p>&gt; Serialize plain POJO clusters to a JSON representation
+&#8226; Validator
+</p>
+<p>&gt; Validate the contents of a JSON file using a JSON schema</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>18
+</p>
+<p>JSONObject Java Class 
+&#8226; A JSONObject is an unordered collection of name/value pairs
+&#8226; The put methods adds a name/value pair to an object
+&#8226; The texts produced by the toString methods strictly conform to the JSON syntax rules
+myString = new JSONObject().put(&quot;JSON&quot;, &quot;Hello, World!&quot;).toString();
+// myString is {&quot;JSON&quot;: &quot;Hello, World&quot;}</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p> 
+How to Send &amp; ReceiveJSON Data at Both Client and Server Side</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>20
+</p>
+<p>How to Generate/Send JSON Data at the Server Side  
+&#8226; Create JSONObject Java object
+&#8226; Add name/value pairs using put method
+&#8226; Convert it to String type using toString method and send it to the client with content-type as &#8220;text/xml&#8221; or &#8220;text/plain&#8221;
+myString = new JSONObject().put(&quot;JSON&quot;, &quot;Hello, World!&quot;).toString();
+// myString is {&quot;JSON&quot;: &quot;Hello, World&quot;}</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>21
+</p>
+<p>How to Receive JSON Data at theClient Side 
+&#8226; JSON data is received as a string
+&#8226; Calling eval() will generate JSON object in JavaScript code
+</p>
+<p>&gt; var JSONdata = eval(req.responseText);
+&#8226; Once you have JSON object, you can use . notation to access its properties
+</p>
+<p>&gt; var name = JSONdata.name;
+&gt; var address = JSONdata.addresses[3];
+&gt; var streetname = JSONdata.addresses[3].street;</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>22
+</p>
+<p>How to Generate/Send JSON Data at the Client Side  
+&#8226; Create JSON JavaScript object
+&#8226; Use &#8220;POST&#8221; HTTP method in the open method of the XMLHttpRequest object
+&#8226; Pass JSON JavaScript object in the send method of XMLHttpRequest object   var carAsJSON = JSON.stringify(car);  var url = &quot;JSONExample?timeStamp=&quot; + new Date().getTime();  createXMLHttpRequest();  xmlHttp.open(&quot;POST&quot;, url, true);  xmlHttp.onreadystatechange = handleStateChange;  xmlHttp.setRequestHeader(&quot;Content-Type&quot;,                                               &quot;application/x-www-form-urlencoded&quot;);      xmlHttp.send(carAsJSON);</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>23
+</p>
+<p>How to Receive JSON Data at theServer Side 
+&#8226; Read the JSON data as a String type
+&#8226; Create JSONObject Java object from the string
+String json = readJSONStringFromRequestBody(request);     
+//Use the JSON-Java binding library to create a JSON object in Java
+JSONObject jsonObject = null;
+try {
+            jsonObject = new JSONObject(json);
+}
+catch(ParseException pe) {
+}</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p> 
+JSON-RPC &amp;JSON-RPC-Java</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>25
+</p>
+<p>What is JSON-RPC? What is JSON-RPC-Java? 
+&#8226; JSON-RPC is a simple remote procedure call protocol similar to XML-RPC although it uses the lightweight JSON format instead of XML
+&#8226; JSON-RPC-Java is a Java implementation of the JSON-RPC protocol</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>26
+</p>
+<p>Why JSON-RPC-Java? 
+&#8226; It allows you to transparently call server-side Java code from JavaScript with an included lightweight JSON-RPC JavaScript client
+&#8226; It is designed to run in a Servlet container such as Tomcat and can be used with J2EE Application servers to allow calling of plain Java or EJB methods from within a JavaScript DHTML web application</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>27
+</p>
+<p>Features of JSON-RPC-Java 
+&#8226; Dynamically call server-side Java methods from JavaScript DHTML web applications. No Page reloading.
+&#8226; Asynchronous communications.
+&#8226; Transparently maps Java objects to JavaScript objects.
+&#8226; Lightweight protocol similar to XML-RPC although much faster.
+&#8226; Leverages J2EE security model with session specific exporting of objects.
+&#8226; Supports Internet Explorer, Mozilla, Firefox, Safari, Opera and Konqueror</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p> 
+Resources</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>29
+</p>
+<p>JSON Resources 
+&#8226; Introducing JSON
+</p>
+<p>&gt; http://www.json.org/
+&#8226; JSON in JavaScript
+</p>
+<p>&gt; http://www.json.org/js.html
+&#8226; JSON in Java
+</p>
+<p>&gt; http://www.json.org/java/index.html</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p> Introduction toJSON (JavaScriptObject Notation)
+Sang Shin
+Java Technology Architect
+Sun Microsystems, Inc.
+sang.shin@sun.com
+www.javapassion.com</p>
+
+</div></div>
+</body></html>

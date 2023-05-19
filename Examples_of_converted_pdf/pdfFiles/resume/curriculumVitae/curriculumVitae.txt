@@ -1,0 +1,56 @@
+Michel Tu Contact
+H +33 604 453 082
+B Chambéry, France
+k michel.tu@neumino.com
+Í www.neumino.com
+Software Engineer
+Education
+Jan. 2012 Master student at Tsinghua University (Beijing)
+Sept. 2009 Major in Computer Science - Average grade 86/100
+Sept. 2009 Engineering student at École Centrale Paris
+Sept. 2007 General Engineering school - Average grade A-
+Sept. 2007 Classe préparatoire at Vaugelas (Chambéry) and La Martinière Monplaisir (Lyon)
+Sept. 2004 Intensive study of mathematics and physics for competitive exams
+Admitted to ENS Lyon and ENS Cachan in mathematics
+Jun. 2004 Baccalauréat with high honours and Italian European section
+Skills
+Programming languages Python, Java, Javascript, PHP
+Other technologies Android, Apache, HTML, CSS, SQL
+Languages French (Mother tongue), English (Fluent), Italian (Conversational), Chinese (Conversational)
+Work experience and Academic projects
+Oct. 2011 Developer for an online pdf viewer for scientific publications of arnetminer.org
+Sept. 2011 Convert pdf to html in Java
+Build a comment system in Javascript and JSP
+Build a recommendation system of publication in Javascript, JSP and Java
+Jun. 2011 Developer for an Android application for postitnow.org
+Apr. 2011 Build a client for Android Phone for a Twitter like website
+Apr. 2011 Developer for a sentiment mining research project
+Sept. 2010 Retrieve data on social networks (Twitter, Renren etc.) in Python
+Improve lexicon used to detect emotions with contextual information in Python and C++
+Dec. 2009 Developer for an academic project to detect spam in Python
+Nov. 2009 Use a hidden Markov model and a stochastic, random restart hill climbing with multiple grids
+Mar. 2008 Developer for the Junior Enterprise of Centrale Paris
+Feb. 2008 Build a PHP CMS for a mathematics laboratory
+Feb. 2008 Developer for an academic project
+Sept. 2007 Build a user interface for a shopping website with Javascript
+Nov. 2011 Mathematics teaching assistant at Centrale Pékin
+Sept. 2009 Oral examinations and tutorial classes for undergraduate students
+Personal projects
+Mar. 2012 Developer for a project about Benford’s law on Twitter
+Mar. 2012 Build a real-time web application with Node.js
+Mar. 2011 Developer for a Flashcard Android application, Redcard
+Feb. 2011 Build a Flashcard application to learn Chinese, supported by nciku.com
+Jun. 2008 Developer for Les cordées de la réussite of Centrale Paris (OPEN) open.campus.ecp.fr
+Mar. 2008 Take part in the activities of the association that support disadvantaged students
+Build web information system to schedule meetings and relay information
+Oct. 2007 Developer for a personal project, lorem.fr
+Sept. 2007 Generate fake text using conditional probabilities with PHP
+Feb. 2009 Founder, administrator, webmaster of teknopole.com
+Feb. 2003 Build a web CMS in PHP for personal Photoshop tutorials - 1000 visitors per day
+Additional information
+Sept. 2009 Awarded a full scholarship to attend Tsinghua University, 2009-2012
+May 2009 Chairman of the magic club of Centrale Paris
+May 2008 Teaching, Organization of shows (especially for charity purposes), Entertainer for Galas
+May 2009 Chairman of the badminton club of Centrale Paris
+May 2008 Responsible for training, Organization of competitions
+Interests New technologies, Scientific breakthroughs, Mathematics

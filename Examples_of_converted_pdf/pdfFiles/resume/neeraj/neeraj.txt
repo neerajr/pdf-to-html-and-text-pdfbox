@@ -1,0 +1,52 @@
+                        NEERAJ R
+Address: Needam, Karimpuzha(p.o), Palakkad, kerala, 679513
+Mobile: +91-9496352123
+Email :  neerajsms  @gmail.com  
+Blog   :  http://neerajkarimpuzha.wordpress.com/
+Code Repository :https://bitbucket.org/   neeraj_r   
+Education: 
+      Bachelor of Technology in Computer Science and Engineering. From Govt 
+Engineering College , Sreekrishnapuram, Palakkad ,Kerala. 2007-2011( Total marks: 
+64%). 
+12th- 94.5%, 2006
+10th- 92.3%, 2004
+Technical skills: 
+      Programming Languages     : C,Python. 
+Operating systems        : Exposure to basics of GNU/Linux systems 
+Tools        : Revision control with Mercurial..
+Technologies        : Google AppEngine
+PROJECTS   :-  
+1) Temporal based encoding schema for crosstalk minimization in 
+Interconnects.
+Abstract :- This project proposes extensive study of interconnect modeling and 
+analysis of   existing methods for Crosstalk minimization in interconnects. The 
+project  also  proposes  a   temporal  based  novel  method  for  crosstalk 
+minimization and development of Integrated   Analysis Environment (IAE) for 
+implementing the crosstalk minimization methods.
+2) Scheduling of grid applications.
+Abstract :- Scheduling  grid  applications  based  on  Software  power  estimation 
+and   optimization using dynamic instrumentation technique and performance 
+analyzer.
+ Programming Langauge  : C
+ Grid  : Globus toolkit
+(Code on bitbucket : https://bitbucket.org/neeraj_r/main_project-codes)
+Hobby projects :
+1)Implementation of the trie datastructure. 
+ A  Trie  datastructure  was  implemented  in  C.(Code  on  bitbucket  : 
+https://bitbucket.org/neeraj_r/data­structures/changeset/38cd5d34915c)
+2)AVL tree implementation in C.
+An AVL tree datastructure was implemented in C. (Code  on  bitbucket: 
+https://bitbucket.org/neeraj_r/data­structures/changeset/2adb14b6ffa5)
+3)Bit Vector Set implementation.
+Bit  vector  set  was  implemented  in  C.(Code  on  bitbucket  : 
+https://bitbucket.org/neeraj_r/miscellaneous/changeset/2dbce89338f1)
+4)Simulator for a toy computer.
+A simulator for a toy nicroprocessor was created in C. (Code on bitbucket : 
+https://bitbucket.org/neeraj_r/mythical­machine­simulator)
+5)Assembler for a toy computer.
+An assembler   for  a   toy   computer  was  created   in  C.   (Code  on  bitbucket   : 
+https://bitbucket.org/neeraj_r/mythical­machine­assembler)
+6)A Google App Engine Based URL Shortener.
+A    simple     webapp     was     developed   in   python   using   Google   App 
+Engine/python   to   shorten   URL's.   (Code   on   bitbucket: 
+https://bitbucket.org/neeraj_r/url­shortner)

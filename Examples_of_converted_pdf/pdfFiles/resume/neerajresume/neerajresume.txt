@@ -1,0 +1,76 @@
+NEERAJ R                                       Needam, Karimpuzha (P.O), Sreekrishnapuram (via), 
+Palakkad, Kerala
+Government Engineering College, 
+Sreekrishnapuram Mobile : +919496352123 
+22, Male, India        Email : neerajsms@gmail.com
+Blog :http://neerajkarimpuzha.wordpress.com/
+Code Repository : https://bitbucket.org/neeraj_
+ EDUCATION
+ Class        Board/ University Marks
+ B. Tech., Computer Science                    University of Calicut   63.40
+ Engineering       (2011)  
+ XII th (2006)  Kerala Board   94.50
+ Xth            (2004)  Kerala Board   92.30
+ TECHNICAL SKILLS
+ Programming Languages C, Python.
+ Operating Systems     Exposure to basics of GNU/Linux systems
+Tools Revision control with mercurial.
+Technologies Google appEngine.
+ PROJECTS 
+Scheduling of grid applications.
+ Abstract :- Scheduling grid applications based on software power estimation, and optimization using 
+dynamic instrumentation technique and performance analyzer.
+• Programming language : C
+• Grid : Globus toolkit
+Codes on bitbucket : https://bitbucket.org/neeraj_r/main_project-codes/changeset/9e3afe0aff38
+Temporal based encoding schema for crosstalk minimization in Interconnects.
+ Abstract :-The project proposes extensive study of interconnect modeling and analysis of existing 
+methods for  Crosstalk  minimization in  interconnects.  The project  also proposes a temporal  based 
+novel method   
+ for crosstalk minimization and development of Integrated Analysis Environment (IAE) for  
+ implementing the crosstalk minimization methods.
+ SEMINAR 
+ 3-D Packaging Technology: 3-D die stacking is an exciting new technology that increases transistor  
+density by vertically integrating two or more die with a dense, high-speed interface. The result of 3D  
+die stacking is a significant reduction of interconnect both within a die and across dies in a system.
+ HOBBY PROJECTS
+1) Implementation of a simulator for toy computer : Implemented a simulator for a toy 
+microprocessor in C. (Code on bitbucket : https://bitbucket.org/neeraj_r/mythical-machine-
+simulator/changeset/7c808e600ed9).
+2) Implementation of an assembler for a toy computer : Implemented an assembler for a toy 
+computer in C. (Code on bitbucket : https://bitbucket.org/neeraj_r/mythical-machine-
+assembler/changeset/a5cd1e8b9f9c).
+3) Implementation of trie data structure : A trie data structure was implemented in C. (Code on 
+bitbucket : https://bitbucket.org/neeraj_r/data-structures/changeset/38cd5d34915c).
+4) AVL tree implementation in C : An AVL tree data structure was implemented in C. (Code on 
+bitbucket : https://bitbucket.org/neeraj_r/data-structures/changeset/2adb14b6ffa5).
+5) Bit vector set implementation : Bit vector set was implemented in C. (Code on bitbucket : 
+https://bitbucket.org/neeraj_r/miscellaneous/changeset/2dbce89338f1).
+ 6) A Google app engine based  Url Shortener :  A simple web-app was developed in python using 
+Google App Engine/python to shorten URL's. (Code on bitbucket : https://bitbucket.org/neeraj_r/url-
+shortner/changeset/dc89696b72b5). My application : http://nrjurlshort.appspot.com/. 
+ ACHIEVEMENTS
+ Academic
+• Qualified Gate 2012 with 92.93 percentile.
+• Mini  project  Paper  named  “Analysis  of  On-chip  Interconnect  Delay  for  65nm  and 
+beyond”selected for  ICRIT (International  Conference on Recent  Innovations in  Technology) 
+2011, held on Feb 10-12 at RIT Kottayam, Kerala.
+• Got A grade and scholarship of USS of Kerala Government Education Department.
+• School topper in the XII th standard.
+Non-academic
+• Won First A grade in Kathakali Group in 43rd Kerala State Schools Youth Festival 2002-2003.
+• Won A grade in Kathakali Group in Eighth Higher Secondary State Youth Festival 2004-2005.
+• Won  Second  prize  in  Science  Quiz  in  District  level  conducted  by  District  Science  club 
+Association on 15-10-2003.
+• Got A grade in Balashasthra Congress in District level conducted by Kerala Shastrasahithya 
+Parishath.
+• Won First prize in Teaching Aids Making in Ottappalam Educational District Work Experience 
+Exhibition on 1997-1998, 1998-1999, and third prize on 2000-2001.
+ Reference : Dr. P.C Reghu Raj
+                      Department of CSE
+                      GEC Sreekrishnapuram
+                      Mail: pcreghu@gmail.com    
+DECLARATION        
+ I hereby declare that all the above furnished information are true and correct to best of my knowledge.
+ Place:
+ Date:    Neeraj.R
